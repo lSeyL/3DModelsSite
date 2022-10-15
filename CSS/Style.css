@@ -142,11 +142,11 @@ ul {
 }
 
 .sectionProjects, .sectionImage, .sectionText{
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    margin: auto;
     padding: 50px;
 }
 
