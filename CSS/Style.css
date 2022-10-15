@@ -215,6 +215,44 @@ form.searchBarSection::after {
     background-color: #0E0F14;
 }
 
+body, html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.backgroundImage {
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/052/406/124/large/saga-alayyoubi-1-sagaalayyoubi-zentemple-ue5.jpg?1659702000");
+    filter: blur(10px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundText {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.backgroundText h1, p{
+    background-color: transparent;
+}
+
 
 
 
