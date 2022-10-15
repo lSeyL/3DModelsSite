@@ -37,7 +37,7 @@
         padding: 5px;
     }
     .loginButton {
-        display: grid;
+        display: inline-block;
     }
     header {
         display: inherit;
@@ -55,4 +55,14 @@
         text-align: center;
     }
 
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
 }

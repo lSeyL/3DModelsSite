@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cube - Log In </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Latest compiled and minified CSS -->
@@ -33,8 +33,56 @@
 <div class="backgroundImage"></div>
 
 <div class="backgroundText">
-    <h1>I am John Doe</h1>
-    <p>And I'm a Photographer</p>
+    <form class="loginForm" action="action_page.php" method="post">
+        <div class="container-fluid">
+            <!--<label for="uname"><b>Username</b></label> -->
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <!--<label for="psw"><b>Password</b></label> -->
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw"> <a href="#">Forgot password?</a></span>
+        </div>
+    </form>
+</div>
+
+<div class="container-fluid sectionDark">
+    <div class="row sectionLinks">
+        <div class="col bottomLinksColumn"></div>
+        <div class="col bottomLinksColumn">
+            <ul class="sectionItems">
+                <li><a href="Pages/3DModels.html">Company</a></li>
+                <li><a href="Pages/Projects.html">Blog</a></li>
+                <li><a href="Pages/SellPage.html">Events</a></li>
+                <li><a href="Pages/About.html">Careers</a></li>
+            </ul>
+        </div>
+        <div class="col bottomLinksColumn">
+            <ul class="sectionItems">
+                <li><a href="Pages/3DModels.html">Buy 3D Models</a></li>
+                <li><a href="Pages/Projects.html">Freelance 3D Projects</a></li>
+                <li><a href="Pages/SellPage.html">Sell 3D Models</a></li>
+                <li><a href="Pages/About.html">Discounts</a></li>
+            </ul>
+        </div>
+        <div class="col bottomLinksColumn">
+            <ul class="sectionItems">
+                <li><a href="Pages/3DModels.html">Help Center</a></li>
+                <li><a href="Pages/Projects.html">Contact Us</a></li>
+                <li><a href="Pages/SellPage.html">Community</a></li>
+                <li><a href="Pages/About.html">Forum</a></li>
+            </ul>
+        </div>
+        <div class="col bottomLinksColumn"></div>
+    </div>
 </div>
 
 </body>
