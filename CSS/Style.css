@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #24252A;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a, button {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: black 2px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.nav_links {
+    link-style:none;
+    grid-row: auto;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0.05s;
+}
+
+.nav_links li a:hover{
+    color: rgb(255,85,110);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(255,25,110,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.05s;
+}
+
+button:hover {
+    background-color: rgb(255,25,110,0.6);
+}
+
+
+.introImage {
+    display: block;
+    height: 75%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    border: rgb(255,255,255,0.2) solid 2px;
+    border-radius: 5px;
+}
+
+.categories-container {
+    padding: 30px 10%;
+    margin: 0 auto;
+    text-align:center;
+    display: grid;
+}
+
+.categories-list{
+    border: white 2px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.categories-item {
+    box-sizing: border-box;
+    link-style:none;
+    display: inline-block;
+    margin: 1%;
+    padding: 10px 30px;
+    font-size: 22px;
+    border-radius: 10px;
+
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.categories-link {
+    transition: all 0.3s ease 0.05s;
+    text-decoration: none;
+    margin: 10px;
+}
+.categories-link:hover{
+    color: rgb(255,85,110);
+}
+
+.info-1 {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.info-paragraphs {
+    font-size: 16px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.carousel{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    border: rgb(255,255,255,0.2) solid 2px;
+    border-radius: 0px;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover{
+    background-color: rgb(50,50,50,0.8);
+    border-radius: 0;
+}
+
+.sectionProjects, .sectionImage, .sectionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    padding: 50px;
+}
+
+.sectionImage img{
+    display: block;
+    height: 75%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+form.searchBarSection input[type=text] {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: 2px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.fa{
+    background:transparent;
+}
+/* Style the submit button */
+form.searchBarSection button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(255,25,110,1);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+form.searchBarSection button:hover {
+    background-color: rgb(255,25,110,0.6);
+}
+
+/* Clear floats */
+form.searchBarSection::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sectionLinks, .sectionDark {
+    text-align: left;
+    color: #f1f1f1;
+    background-color: #0E0F14;
+}
+.sectionItems a, .sectionItems li{
+    padding-top: 10px;
+    background-color: #0E0F14;
+    font-size: 15px;
+    text-decoration: #f1f1f1;
+    link-style:none;
+}
+.sectionItems a:hover{
+    transition: all 0.3s ease 0.05s;
+    color:rgb(200,200,200,0.8);
+}
+
+.bottomLinksColumn {
+    background-color: #0E0F14;
+}
+
+
+
+
+
+
+
+
