@@ -81,6 +81,9 @@ button:hover {
     text-align:center;
     display: grid;
 }
+li {
+    text-align: center;
+}
 
 .categories-list{
     border: white 2px solid;
@@ -96,9 +99,13 @@ button:hover {
     display: inline-block;
     margin: 1%;
     padding: 10px 30px;
-    font-size: 22px;
+    font-size: 25px;
     border-radius: 10px;
 
+}
+
+.categories-names{
+    font-size: 20px;
 }
 ul {
     list-style: none;
@@ -135,7 +142,9 @@ ul {
     border: rgb(255,255,255,0.2) solid 2px;
     border-radius: 0px;
 }
-
+.carousel-control-next, .carousel-control-prev {
+    transition: all 0.3s ease-in-out 0.05s;
+}
 .carousel-control-next:hover, .carousel-control-prev:hover{
     background-color: rgb(50,50,50,0.8);
     border-radius: 0;
@@ -158,7 +167,9 @@ ul {
     margin-right: auto;
     object-fit: cover;
 }
-
+form {
+    margin-top: 5%;
+}
 form.searchBarSection input[type=text] {
     border-radius: 10px;
     padding: 10px;
@@ -216,6 +227,8 @@ form.searchBarSection::after {
 
 .bottomLinksColumn {
     background-color: #0E0F14;
+    margin-left: 5%;
+    padding: 10px;
 }
 
 body, html {
@@ -277,10 +290,22 @@ input[type=text], input[type=password] {
 
 
 /* Extra style for the cancel button (red) */
+
+.loginBtn {
+    background-color: rgb(46,250,71,1);;
+    color: #24252A;
+    font-weight: bold;
+}
+
+.loginBtn:hover {
+    background-color: rgb(46,250,71,0.6);
+    color: #24252A;
+    font-weight: bold;
+}
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: rgb(255,25,110);;
 }
 
 /* Center the avatar image inside this container */
@@ -312,7 +337,9 @@ span.psw {
 
 /* Change styles for span and cancel button on extra small screens */
 
-
+.mobileButton {
+    display: none;
+}
 .containerButtons{
     display: inline-block;
     align-items: center;
@@ -325,7 +352,25 @@ span.psw {
     font-size: 15px;
     font-weight: normal;
 }
-.backgroundTextAbout{
+.aboutSection{
+    margin-top: 15vh;
+}
+.backgroundText{
+    width: 25%;
+    max-width: 25%;
+    resize: none;
+}
+
+.cancelButton{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+h2, h3 {
+    margin-bottom: 2vh;
+}
+
+.sectionProjects{
 }
 
 
