@@ -33,7 +33,6 @@ header {
 }
 
 .nav_links {
-    link-style:none;
     grid-row: auto;
 }
 
@@ -95,7 +94,6 @@ li {
 }
 .categories-item {
     box-sizing: border-box;
-    link-style:none;
     display: inline-block;
     margin: 1%;
     padding: 10px 30px;
@@ -150,13 +148,17 @@ ul {
     border-radius: 0;
 }
 
-.sectionProjects, .sectionImage, .sectionText{
+.sectionProjects, .sectionImage{
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     padding: 50px;
+}
+
+.sectionText {
+    margin-left: 10%;
 }
 
 .sectionImage img{
@@ -215,7 +217,6 @@ form.searchBarSection::after {
     background-color: #0E0F14;
     font-size: 15px;
     text-decoration: #f1f1f1;
-    link-style:none;
 }
 .searchBarSection{
     display: flex;
@@ -285,6 +286,7 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    color: white;
 }
 
 

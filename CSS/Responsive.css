@@ -47,6 +47,10 @@
         margin: 10px;
         padding: 5px;
     }
+
+    .nav_links li{
+        display: block;
+    }
 }
 @media only screen and (max-width: 600px) {
 
@@ -54,6 +58,12 @@
         resize: none;
     }
 
+    .sectionImage{
+        display: block;
+        flex-wrap: wrap;
+        margin: 2vh;
+        width: 100%;
+    }
     .logo {
         display: block;
         width: auto;
@@ -156,6 +166,12 @@
         justify-content: center;
         block-size: 10vh;
     }
+    @media screen and (max-width: 400px) {
+        .backgroundText {
+
+            margin: 60vh 0px 0px;
+        }
+    }
 
 
 
@@ -168,11 +184,19 @@
         .cancelbtn {
             width: 100%;
         }
-
+        .body {
+            background-color: #0E0F14;
+        }
         .backgroundText {
+
+            margin: 60vh 0px 0px;
             width: 100%;
             max-width: 100%;
             resize: none;
+        }
+
+        .sectionLinks,.sectionDark{
+            display: block;
         }
 
     }
