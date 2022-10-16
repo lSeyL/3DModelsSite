@@ -57,6 +57,17 @@
     * {
         resize: none;
     }
+    .no-phoneDisplay {
+        display: none;
+    }
+
+    .categories-list{
+        display: inline-block;
+    }
+
+    .categories-item {
+        margin: 0;
+    }
 
     .sectionImage{
         display: block;
@@ -129,7 +140,7 @@
     }
 
     .backgroundText {
-        margin-top: 50%;
+        margin-top: 70%;
     }
 
     .loginButton {
@@ -143,7 +154,7 @@
 
     .backgroundText {
         width: 85%;
-        max-width: 85%;
+        max-width: 75%;
         resize: none;
     }
     .bottomLinksColumn {
@@ -166,15 +177,11 @@
         justify-content: center;
         block-size: 10vh;
     }
-
-    .categories-list{
-        display: inline-block;
+    @media screen and (max-width: 400px) {
+        .aboutSection{
+            margin: 70vh 0px 0px;
+        }
     }
-
-    .categories-item {
-        margin: 0;
-    }
-
     @media screen and (max-width: 400px) {
         .backgroundText {
             margin: 60vh 0px 0px;
@@ -219,6 +226,10 @@
 
         .sectionLinks,.sectionDark{
             display: block;
+        }
+
+        .loginFormBackground {
+            margin: 35vh 0px 0px;
         }
 
     }
