@@ -142,8 +142,8 @@
     }
 
     .backgroundText {
-        width: 75%;
-        max-width: 75%;
+        width: 85%;
+        max-width: 85%;
         resize: none;
     }
     .bottomLinksColumn {
@@ -166,10 +166,32 @@
         justify-content: center;
         block-size: 10vh;
     }
+
+    .categories-list{
+        display: inline-block;
+    }
+
+    .categories-item {
+        margin: 0;
+    }
+
     @media screen and (max-width: 400px) {
         .backgroundText {
-
             margin: 60vh 0px 0px;
+        }
+
+        .loginFormBackground {
+            margin: 35vh 0px 0px;
+        }
+        .categories-list{
+            display: inline-block;
+        }
+
+        .categories-item {
+            margin: 0;
+        }
+        li {
+            block-size: 13vh;
         }
     }
 
