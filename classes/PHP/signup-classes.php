@@ -1,15 +1,16 @@
 <?php
 class Signup extends databaseConnect {
 
-    protected function setUser($uname,$psw, $email)
+    protected function setUser($uname, $psw, $email, $balance)
     {
-        $stmt = $this->connect()->prepare('INSERT INTO databaza.users (username, password, email) VALUES (?, ?, ?);');
+
+        $stmt = $this->connect()->prepare('INSERT INTO databaza.users (username, password, email, balance) VALUES (?, ?, ?, ?);');
 
         $hashedPassword = password_hash($psw, PASSWORD_DEFAULT);
 
-        if (!$stmt->execute(array($uname, $hashedPassword, $email))) {
+        if (!$stmt->execute(array($uname, $hashedPassword, $email, $balance))) {
             $stmt = null;
-            header("location: ../index.php?error=stmtfailed");
+            header("location: ../../index.php?error=stmtfailed");
             exit();
         }
 
@@ -22,7 +23,7 @@ class Signup extends databaseConnect {
 
         if (!$stmt->execute(array($uname, $email))) {
             $stmt = null;
-            header("location: ../index.php?error=stmtfailed");
+            header("location: ../../index.php?error=stmtfailed");
             exit();
         }
 

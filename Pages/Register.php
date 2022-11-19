@@ -35,7 +35,7 @@
 <div class="backgroundImage"></div>
 
 <div class="backgroundText loginFormBackground">
-  <form class="loginForm" action="../Classes/PHP/signup-inc.php" method="post">
+  <form class="loginForm" action="../classes/PHP/signup-inc.php" method="post">
     <div class="container-fluid">
       <!-- <label for="uname"><b>Username</b></label> -->
       <input type="text" placeholder="Enter Your Username" name="uname" required>

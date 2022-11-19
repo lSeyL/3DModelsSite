@@ -1,4 +1,5 @@
 <?php
+include "configuration.php";
 class databaseConnect
 
 {

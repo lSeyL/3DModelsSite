@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,11 +29,27 @@
             <li><a href="Pages/About.html">About</a></li>
         </ul>
     </nav>
-    <div class="loginButton">
-        <form action="Pages/LogIn.php" method="get">
-            <button>Log In</button>
-        </form>
-    </div>
+    <?php
+
+    if (isset($_SESSION["userid"])) {
+        ?>
+        <div class="loginButton">
+            <form action="Pages/LogIn.php" method="get">
+                <button>Log Out</button>
+            </form>
+        </div>
+        <?php
+    } else {
+        ?>
+
+        <div class="loginButton">
+            <form action="Pages/LogIn.php" method="get">
+                <button>Log In</button>
+            </form>
+        </div>
+        <?php
+    }
+    ?>
 </header>
 <div>
     <img class="introImage"
@@ -50,26 +69,26 @@
 <div class="categories-container container-fluid">
     <ul class="row categories-list">
         <li class="col categories-item"><a class="categories-link" href="#">
-            <div class="categories-names">Car</div>
-        </a></li>
+                <div class="categories-names">Car</div>
+            </a></li>
         <li class="col categories-item"><a class="categories-link" href="#">
-            <div class="categories-names">Aircraft</div>
-        </a></li>
+                <div class="categories-names">Aircraft</div>
+            </a></li>
         <li class="col categories-item"><a class="categories-link" href="#">
-            <div class="categories-names">Architectual</div>
-        </a></li>
+                <div class="categories-names">Architectual</div>
+            </a></li>
         <li class="col categories-item"><a class="categories-link" href="#">
-            <div class="categories-names">Animals</div>
-        </a></li>
+                <div class="categories-names">Animals</div>
+            </a></li>
         <li class="col categories-item"><a class="categories-link" href="#">
-            <div class="categories-names">Buildings</div>
-        </a></li>
+                <div class="categories-names">Buildings</div>
+            </a></li>
         <li class="col categories-item"><a class="categories-link" href="#">
-            <div class="categories-names">Characters</div>
-        </a></li>
+                <div class="categories-names">Characters</div>
+            </a></li>
         <li class="col categories-item"><a class="categories-link" href="#">
-            <div class="categories-names"> Food</div>
-        </a></li>
+                <div class="categories-names"> Food</div>
+            </a></li>
     </ul>
     <form class="searchBarSection" action="https://www.google.com">
         <input type="text" placeholder="Search 3D Models" name="search">
@@ -163,7 +182,8 @@
     </div>
     <div class="col">
         <div class="sectionImage">
-            <img src="https://assets.cgtrader.com/assets/home/cgtrader-community-705a6d514dfb8b1f48d2cb74ff0a20a0cdd8d5bbacbe38f9f2e76f277af0ced7.png" alt="Community">
+            <img src="https://assets.cgtrader.com/assets/home/cgtrader-community-705a6d514dfb8b1f48d2cb74ff0a20a0cdd8d5bbacbe38f9f2e76f277af0ced7.png"
+                 alt="Community">
         </div>
     </div>
 
