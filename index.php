@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cube - Home to 3D models</title>
-    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/GQ0ZIWh.png">
+    <link rel="icon" type="image/x-icon" href="Images/CubeLogo.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,7 +27,7 @@
         </ul>
     </nav>
     <div class="loginButton">
-        <form action="Pages/LogIn.html" method="get">
+        <form action="Pages/LogIn.php" method="get">
             <button>Log In</button>
         </form>
     </div>
@@ -121,7 +121,7 @@
                     <h5>Freelance Hub</h5>
                     <p>Where people with exciting 3D Projects meet talented 3D designers</p>
                     <div class="loginButton">
-                        <form action="Pages/LogIn.html" method="get">
+                        <form action="Pages/LogIn.php" method="get">
                             <button>Learn More</button>
                         </form>
                     </div>
@@ -152,7 +152,7 @@
                             Find tutorials and discuss other 3D related matters
                         </div>
                         <div class="loginButton">
-                            <form action="Pages/LogIn.html" method="get">
+                            <form action="Pages/LogIn.php" method="get">
                                 <button>Join the community</button>
                             </form>
                         </div>

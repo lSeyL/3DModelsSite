@@ -17,7 +17,7 @@
 </head>
 <body>
 <header>
-    <a href="../index.html">
+    <a href="../index.php">
         <img class="logo" src="https://i.imgur.com/OX4gs9X.png" alt="LOGO">
     </a>
     <nav>
@@ -26,8 +26,9 @@
         </ul>
     </nav>
     <div class="loginButton">
-        <form action="../index.html" method="get">
+        <form action="../index.php" method="get">
             <button>Home</button>
+
         </form>
     </div>
 </header>
@@ -37,23 +38,23 @@
 <div class="backgroundText loginFormBackground">
     <form class="loginForm" action="action_page.php" method="post">
         <div class="container-fluid">
-            <!--<label for="uname"><b>Username</b></label> -->
+            <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
-
-            <!--<label for="psw"><b>Password</b></label> -->
+            <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <button class="loginBtn" type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </div>
-
-        <div class="container cancelButton">
-            <button type="button">Cancel</button>
-            <span class="psw"> <a href="#">Forgot password?</a></span>
+            <button class="loginBtn" type="submit" name="submit">Login</button>
+            <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
         </div>
     </form>
+        <div class="container cancelButton">
+            <form action="Register.php" method="get">
+                <button>Register</button>
+            </form>
+        </div>
+        <div>
+            <!-- <span class="psw"> <a href="#">Forgot password?</a></span> -->
+        </div>
+
 </div>
 <footer>
     <div class="container-fluid sectionDark">
@@ -61,26 +62,26 @@
             <div class="col bottomLinksColumn"></div>
             <div class="col bottomLinksColumn">
                 <ul class="sectionItems">
-                    <li><a href="../index.html">Company</a></li>
-                    <li><a href="../index.html">Blog</a></li>
-                    <li><a href="../index.html">Events</a></li>
-                    <li><a href="../index.html">Careers</a></li>
+                    <li><a href="../index.php">Company</a></li>
+                    <li><a href="../index.php">Blog</a></li>
+                    <li><a href="../index.php">Events</a></li>
+                    <li><a href="../index.php">Careers</a></li>
                 </ul>
             </div>
             <div class="col bottomLinksColumn">
                 <ul class="sectionItems">
-                    <li><a href="../index.html">Buy 3D Models</a></li>
-                    <li><a href="../index.html">Freelance 3D Projects</a></li>
-                    <li><a href="../index.html">Sell 3D Models</a></li>
-                    <li><a href="../index.html">Discounts</a></li>
+                    <li><a href="../index.php">Buy 3D Models</a></li>
+                    <li><a href="../index.php">Freelance 3D Projects</a></li>
+                    <li><a href="../index.php">Sell 3D Models</a></li>
+                    <li><a href="../index.php">Discounts</a></li>
                 </ul>
             </div>
             <div class="col bottomLinksColumn">
                 <ul class="sectionItems">
-                    <li><a href="../index.html">Help Center</a></li>
-                    <li><a href="../index.html">Contact Us</a></li>
-                    <li><a href="../index.html">Community</a></li>
-                    <li><a href="../index.html">Forum</a></li>
+                    <li><a href="../index.php">Help Center</a></li>
+                    <li><a href="../index.php">Contact Us</a></li>
+                    <li><a href="../index.php">Community</a></li>
+                    <li><a href="../index.php">Forum</a></li>
                 </ul>
             </div>
             <div class="col bottomLinksColumn"></div>
