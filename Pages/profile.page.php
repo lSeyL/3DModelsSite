@@ -19,6 +19,9 @@
             <form action="" method="get">
                 <button>Delete Account</button>
             </form>
+            <form action="" method="get">
+                <button>Delete Account</button>
+            </form>
         </div>
     </form>
 
