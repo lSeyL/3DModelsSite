@@ -1,9 +1,9 @@
 <?php
 
-class LoginControl extends  Login {
+class LoginControl extends classLogin {
+
     private $uname;
     private $psw;
-
 
     public function __construct($uname, $psw)
     {
@@ -15,7 +15,7 @@ class LoginControl extends  Login {
     public function loginUser() {
         if (!$this->emptyInput()) {
             // echo "Empty username"
-            header("location: ../../index.php?error=emptyInput");
+            header("location: ../../Pages/LogIn.php?error=emptyInput");
             exit();
         }
 

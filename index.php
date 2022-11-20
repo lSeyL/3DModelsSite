@@ -17,6 +17,7 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="CSS/Responsive.css">
+    <script defer src="scripts/login-validation.js"></script>
 </head>
 <body>
 <header>
@@ -33,10 +34,24 @@ session_start();
 
     if (isset($_SESSION["userid"])) {
         ?>
+            <div class="flex-row"
         <div class="loginButton">
-            <form action="Pages/LogIn.php" method="get">
+            <form action="classes/PHP/logout.php" method="get">
                 <button>Log Out</button>
             </form>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                Profile
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item active" href="Pages/profile.page.php">Profile settings</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
         </div>
         <?php
     } else {

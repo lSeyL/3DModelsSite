@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script defer src="/scripts/login-validation.js"></script>
     <link rel="stylesheet" href="../CSS/Style.css">
     <link rel="stylesheet" href="../CSS/Responsive.css">
 </head>
@@ -36,12 +36,13 @@
 <div class="backgroundImage"></div>
 
 <div class="backgroundText loginFormBackground">
-    <form class="loginForm" action="../classes/PHP/login-inc.php" method="post">
+    <form class="loginForm" id="form" action="../classes/PHP/login-inc.php" method="post">
         <div class="container-fluid">
+            <div id="err"> a</div>
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input id="unameLogin" type="text" placeholder="Enter Username" name="uname" >
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input id="passwordLogin" type="password" placeholder="Enter Password" name="psw" >
             <button class="loginBtn" type="submit" name="submit">Login</button>
             <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
         </div>
