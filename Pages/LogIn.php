@@ -36,22 +36,32 @@
 <div class="backgroundImage"></div>
 
 <div class="backgroundText loginFormBackground">
-    <form class="loginForm" id="form" action="../classes/PHP/login-inc.php" method="post">
-        <div class="container-fluid">
-            <div id="err"> a</div>
-            <label for="uname"><b>Username</b></label>
-            <input id="unameLogin" type="text" placeholder="Enter Username" name="uname" >
-            <label for="psw"><b>Password</b></label>
-            <input id="passwordLogin" type="password" placeholder="Enter Password" name="psw" >
-            <button class="loginBtn" type="submit" name="submit">Login</button>
-            <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
-        </div>
-    </form>
-        <div class="container cancelButton">
-            <form action="Register.php" method="get">
-                <button>Register</button>
+    <ul class="loginForm">
+        <li>
+            <form id="form" action="../classes/PHP/login-inc.php" method="post">
+                <div class="container-fluid">
+                    <div id="err"><label id="err"><b></b></label></div>
+
+                    <br>
+                    <label for="uname"><b>Username</b></label>
+                    <input id="unameLogin" type="text" placeholder="Enter Username" name="uname" >
+                    <label for="psw"><b>Password</b></label>
+                    <input id="passwordLogin" type="password" placeholder="Enter Password" name="psw" >
+                    <button class="loginBtn" type="submit" name="submit">Login</button>
+                    <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                </div>
             </form>
-        </div>
+        </li>
+        <li>
+            <div class="container cancelButton">
+                <form action="Register.php" method="get">
+                    <button>Register</button>
+                </form>
+            </div>
+        </li>
+    </ul>
+
+
         <div>
             <!-- <span class="psw"> <a href="#">Forgot password?</a></span> -->
         </div>

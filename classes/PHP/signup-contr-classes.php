@@ -17,27 +17,27 @@ class RegisterControl extends Signup {
     public function signupUser() {
         if (!$this->emptyInput()) {
             // echo "Empty username"
-            header("location: ../../index.php?error=emptyInput");
+            header("location: ../../Pages/Register.php?error=emptyInput");
             exit();
         }
         if (!$this->invalidUsername()) {
             // echo "Invalid username"
-            header("location: ../../index.php?error=invalidUsername");
+            header("location: ../../Pages/Register.php?error=invalidUsername");
             exit();
         }
         if (!$this->invalidEmail()) {
             // echo "Invalid email"
-            header("location: ../../index.php?error=invalidEmail");
+            header("location: ../../Pages/Register.php?error=invalidEmail");
             exit();
         }
         if (!$this->passwordMatch()) {
             // echo "Invalid password"
-            header("location: ../../index.php?error=passwordMatch");
+            header("location: ../../Pages/Register.php?error=passwordMatch");
             exit();
         }
         if (!$this->usernameTakenCheck()) {
             // echo "Username taken"
-            header("location: ../../index.php?error=usernameTaken");
+            header("location: ../../Pages/Register.php?error=usernameTaken");
             exit();
         }
         $this->setUser($this->uname, $this->psw, $this->email, 0);

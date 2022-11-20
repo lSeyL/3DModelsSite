@@ -26,7 +26,7 @@ form.addEventListener('submit', (e) => {
     if (messages.length > 0) {
         alert(messages)
         e.preventDefault()
-        err.innerText = messages.join(',   ')
+        err.innerHTML = messages.join(',   ')
 
     }
 })

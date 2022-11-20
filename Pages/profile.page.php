@@ -16,12 +16,18 @@
             <form action="" method="get">
                 <button class="loginBtn">Submit Password</button>
             </form>
+            <br>
+            <br>
+            <br>
+            <label for="psw"><b>Change Username</b></label>
+            <input id="passwordLogin" type="password" placeholder="Change Your Username" name="psw" >
             <form action="" method="get">
-                <button>Delete Account</button>
+                <button class="loginBtn">Submit Username</button>
             </form>
             <form action="" method="get">
                 <button>Delete Account</button>
             </form>
+
         </div>
     </form>
 

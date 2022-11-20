@@ -17,14 +17,14 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="CSS/Responsive.css">
-    <script defer src="scripts/login-validation.js"></script>
+
 </head>
 <body>
 <header>
     <img class="logo" src="https://i.imgur.com/OX4gs9X.png" alt="LOGO">
     <nav>
         <ul class="nav_links">
-            <li><a href="Pages/3DModels.html">3D Models</a></li>
+            <li><a href="Pages/3DModels.php">3D Models</a></li>
             <li><a href="Pages/Projects.html">Projects</a></li>
             <li><a href="Pages/SellPage.html">Sell 3D Models</a></li>
             <li><a href="Pages/About.html">About</a></li>
