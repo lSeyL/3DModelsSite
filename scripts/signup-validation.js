@@ -9,8 +9,6 @@ const err = document.getElementById('err')
 form.addEventListener('submit', (e) => {
     let messages = []
 
-
-
     if (name.value === '' || name.value == null) {
         messages.push('Name is required')
     }

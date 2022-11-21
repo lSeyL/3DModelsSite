@@ -12,7 +12,7 @@ if (isset($_POST['upload'])) {
     $storage->storeData($model);
     header("location: ../../Pages/3DModels.php?error=none");
 }
-if (isset($_POST['delete'])) {
+if (isset($_POST['id'])) {
     $storage = new Storage();
     $storage->deleteData();
 }

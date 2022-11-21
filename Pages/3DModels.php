@@ -49,44 +49,36 @@ $loader = new StorageLoader();
 <div>
     <?php
     require_once '../classes/PHP/database-connection.php';
+
     $db = new databaseConnect();
-    $sql = "SELECT * FROM `models`";
-    $query = $db->connect()->prepare($sql);
-    $query->execute();
 
-    while($fetch = $query->fetch()){
-        ?>
-
-        <tr>
-            <td><?php echo $fetch['id_model']?></td>
-            <td><?php echo $fetch['name_model']?></td>
-            <td><?php echo $fetch['desc_model']?></td>
-        </tr>
-
-        <?php
-    }
     ?>
     <div>
         <?php
         $numOfCols = 4;
         $rowCount = 0;
         $bootstrapColWidth = 12 / $numOfCols;
-        $id = 0;
+        $r = 1;
         /** @var Model $model */
         foreach ($loader->getData() as $model){
             if($rowCount % $numOfCols == 0) { ?> <div class="row"> <?php }
             $rowCount++;
-            $id++; ?>
+            $sql = "SELECT * FROM `models`";
+            $query = $db->connect()->prepare($sql);
+            $g= $query->fetchAll();
+
+            $r++;
+             ?>
 
             <div class="align-items-center col-md-<?php echo $bootstrapColWidth; ?>">
                 <div class="thumbnail">
-                    <h3> <?php echo $model->getName() ?></h3>
+                    <h3> <?php ; echo $model->getName()?></h3>
                     <img width="150px" src="https://img-new.cgtrader.com/items/810577/f0f5780708/mh-60r-danish-seahawk-navy-helicopter-3d-model-obj-3ds-fbx-c4d-blend-dae.png">
-                    <p><?php echo $model->getDesc() ?></p>
+                    <p><?php echo $model->getDesc(); ?></p>
                 </div>
                 <button type="submit" class="btn btn-info" name="edit">Edit</button>
-                <form action="delete.php" method="post">
-                    <button type="submit" class="btn btn-danger" id="delete" name="delete_model" value="<?php $id;?>">Delete</button>
+                <form action="../classes/PHP/store-test.php?id=" method="post">
+                    <button type="submit" class="btn btn-danger" id="delete" name="delete_model" value="">Delete</button>
                 </form>
             </div>
 
