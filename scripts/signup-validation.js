@@ -28,10 +28,6 @@ form.addEventListener('submit', (e) => {
         messages.push('Password cannot be password')
     }
 
-    if (password !== password2) {
-        messages.push("Passwords don't match!")
-    }
-
     if (email.value === '') {
         messages.push('Email cannot be blank');
     }
