@@ -7,17 +7,10 @@ class Storage extends databaseConnect
     {
     }
 
-    public function storeData($name, $desc)
+    public function storeData(Model $model)
     {
         $stmt = $this->connect()->prepare('INSERT INTO databaza.models(name_model, desc_model) VALUES (?, ?);');
-
-        if (!$stmt->execute(array($name,$$desc))) {
-            $stmt = null;
-            header("location: ../../index.php?error=stmtfailed");
-            exit();
-        }
-
-        $stmt = null;
+        $stmt->execute(array($model->getName(), $model->getDesc()));
     }
 
     public function getData(): array
@@ -36,12 +29,6 @@ class Storage extends databaseConnect
     public function deleteData()
     {
 
-        $del = $dbh->prepare('DELETE FROM models');
-        $del->execute();
-
-        print("Return number of rows that were deleted:\n");
-        $count = $del->rowCount();
-        print("Deleted $count rows.\n");
     }
 
 

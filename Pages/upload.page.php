@@ -12,13 +12,13 @@
 </head>
 <body>
     <div class="d-grid justify-content-lg-center">
-        <form action="../classes/PHP/php-storage/storage-inc.php">
+        <form method="post" action="../classes/PHP/store-test.php" >
             <div class="mb-3 mt-3">
                 <label for="modelName" class="form-label">Model Name</label>
-                <input type="modelName" class="form-control" id="modelName" placeholder="Name of your model" name="modelName" required>
+                <input type="text" class="form-control" id="modelName" placeholder="Name of your model" name="modelName" required>
             </div>
             <div class="mb-3">
-                <label for="comment">Comments:</label>
+                <label for="comment">Description:</label>
                 <textarea class="form-control" rows="5" id="comment" name="modelText"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" name="upload">Upload</button>

@@ -1,3 +1,8 @@
+<?php
+require "../classes/PHP/storage-inc.php";
+
+$loader = new StorageLoader();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +45,56 @@
             </div>
         </div>
     </nav>
+</div>
+<div>
+    <?php
+    require_once '../classes/PHP/database-connection.php';
+    $db = new databaseConnect();
+    $sql = "SELECT * FROM `models`";
+    $query = $db->connect()->prepare($sql);
+    $query->execute();
+
+    while($fetch = $query->fetch()){
+        ?>
+
+        <tr>
+            <td><?php echo $fetch['id_model']?></td>
+            <td><?php echo $fetch['name_model']?></td>
+            <td><?php echo $fetch['desc_model']?></td>
+        </tr>
+
+        <?php
+    }
+    ?>
+    <div>
+        <?php
+        $numOfCols = 4;
+        $rowCount = 0;
+        $bootstrapColWidth = 12 / $numOfCols;
+        $id = 0;
+        /** @var Model $model */
+        foreach ($loader->getData() as $model){
+            if($rowCount % $numOfCols == 0) { ?> <div class="row"> <?php }
+            $rowCount++;
+            $id++; ?>
+
+            <div class="align-items-center col-md-<?php echo $bootstrapColWidth; ?>">
+                <div class="thumbnail">
+                    <h3> <?php echo $model->getName() ?></h3>
+                    <img width="150px" src="https://img-new.cgtrader.com/items/810577/f0f5780708/mh-60r-danish-seahawk-navy-helicopter-3d-model-obj-3ds-fbx-c4d-blend-dae.png">
+                    <p><?php echo $model->getDesc() ?></p>
+                </div>
+                <button type="submit" class="btn btn-info" name="edit">Edit</button>
+                <form action="delete.php" method="post">
+                    <button type="submit" class="btn btn-danger" id="delete" name="delete_model" value="<?php $id;?>">Delete</button>
+                </form>
+            </div>
+
+            <?php
+            if($rowCount % $numOfCols == 0) { ?> </div>
+            <?php } }
+        ?>
+    </div>
 </div>
 </body>
 </html>

@@ -12,6 +12,8 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="/scripts/login-validation.js"></script>
+
+
     <link rel="stylesheet" href="../CSS/Style.css">
     <link rel="stylesheet" href="../CSS/Responsive.css">
 </head>
@@ -38,13 +40,14 @@
 <div class="backgroundText loginFormBackground">
     <ul class="loginForm">
         <li>
-            <form id="form" action="../classes/PHP/login-inc.php" method="post">
-                <div class="container-fluid">
-                    <div id="err"><label id="err"><b></b></label></div>
 
-                    <br>
+            <form id="form" action="../classes/PHP/login-inc.php" method="post">
+
+                <div class="container-fluid">
+                    <small id="err" class="error_msg" ></small><br>
                     <label for="uname"><b>Username</b></label>
                     <input id="unameLogin" type="text" placeholder="Enter Username" name="uname" >
+
                     <label for="psw"><b>Password</b></label>
                     <input id="passwordLogin" type="password" placeholder="Enter Password" name="psw" >
                     <button class="loginBtn" type="submit" name="submit">Login</button>

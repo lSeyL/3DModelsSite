@@ -14,6 +14,7 @@
    <!-- <script defer src="/scripts/signup-validation.js"></script> -->
   <link rel="stylesheet" href="../CSS/Style.css">
   <link rel="stylesheet" href="../CSS/Responsive.css">
+    <script defer src="/scripts/signup-validation.js"></script>
 </head>
 <body>
 <header>
@@ -36,7 +37,9 @@
 
 <div class="backgroundText loginFormBackground">
   <form class="loginForm" id="form" action="../classes/PHP/signup-inc.php" method="post">
+
     <div class="container-fluid">
+        <br><small id="err" class="error_msg" ></small><br>
       <!-- <label for="uname"><b>Username</b></label> -->
       <input type="text" id="name" placeholder="Enter Your Username" name="uname">
         <div class="error"></div>
@@ -47,10 +50,10 @@
        <input type="password" id="password" placeholder="Enter Your Password" name="psw">
         <div class="error"></div>
        <!-- <label for="pswRepeat"><b>Repeat Password</b></label> -->
-       <input type="password" id="password2" placeholder="Enter Your Password" name="pswRepeat">
+       <input type="password" id="password2" placeholder="Enter Your Password Again" name="pswRepeat">
         <div class="error"></div>
         <button class="loginBtn" type="submit" id="submit" name="submit">Register</button>
-
+        <br><br>
        <!-- <span class="psw"> <a href="#">Forgot password?</a></span> -->
     </div>
   </form>
